@@ -1,0 +1,391 @@
+*{
+    padding: 0px;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+  font-family: 'Inter', sans-serif;
+}
+::selection{
+color: crimson;
+}
+/* cabeça */
+.grupocabeca{
+    display: flex;
+    background-color: #F9B6B6;
+    height: 150px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.Cursor{
+    margin-top: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+#Pesquisa{
+    height: 34px;
+    width: 283px;
+    margin-top: 70px; 
+    border-radius: 10px 10px 10px 10px;
+    border-color: black;
+}
+.Cursor:hover{
+color: red;
+transform: scale(1.2);
+}
+#logo{
+    margin-left: 7%;
+    margin-top: 26px;
+}
+
+.LI {
+    display: inline-block;
+    margin-top: 65px;
+    font-size: 22px;
+    transition: 0.8s;
+}
+.UL{
+    margin-left: 7%;
+}
+
+.LI {
+        margin-right: 37px;
+}
+ li a{
+    color: black;  
+    transition: 0.8s;  
+}
+a:hover{
+    color: red;
+    font-size: 25px;
+}
+.grupocabeca div span{
+    margin-right: 0px;
+}
+@media(max-width:1100px)
+{
+    .grupocabeca{
+        display: flex;
+        background-color: #F9B6B6;
+        height: 150px;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .Cursor{
+        margin-top: 10px;
+        transition: 1s;
+        cursor: pointer;
+    }
+    #Pesquisa{
+        height: 34px;
+        width: 283px;
+        margin-top: 70px; 
+        border-radius: 10px 10px 10px 10px;
+        border-color: black;
+    }
+    .Cursor:hover{
+    color: red;
+    transform: scale(1.2);
+    }
+    #logo{
+        margin-left: 7%;
+        margin-top: 26px;
+    }
+    div #logo{
+        position: relative;
+        right: 200px;
+    }
+    
+    .LI {
+        display: inline-block;
+        margin-top: 65px;
+        font-size: 17px;
+        transition: 0.8s;
+    }
+    .UL{
+        position: relative;
+        right: 0px;
+    }
+    
+    .LI {
+            margin-right: 37px;
+    }
+     li a{
+        color: black;  
+        transition: 0.8s;  
+    }
+    a:hover{
+        color: red;
+        font-size: 20px;
+    }
+    .grupocabeca div span{
+        margin-right: 0px;
+    }
+    #delete{
+        z-index: -1;
+    }
+    @media (max-width:1033px) 
+    {
+        #logo{
+            position: absolute;
+            margin-right: 10px;
+        }
+        .UL{
+            position: absolute;
+        }
+        .LI{
+           font-size: 15px ;
+        }
+        .LI:hover{
+            font-size: 18px; 
+        }
+        @media (max-width:860px)
+        {
+            .grupocabeca{
+                height: 200px;
+                width: 100%;
+            }
+            #ma{
+                position: absolute;
+                margin-left: 40%;
+            }
+            .UL{
+                margin-right: 25%;
+                margin-top: 90px;
+            }
+            @media (max-width:827px)
+             {
+                .grupocabeca{
+                    height: 210px;
+                    width: 100%;
+                }
+                #delete{
+                    margin-bottom: 200px;
+                }
+                #ma{
+                    position: absolute;
+                    margin-bottom: 50%;
+                    margin-left: 200px;
+                }
+                .UL{
+                    position: absolute;
+                    margin-right: 25%;
+                    margin-top: 100px;
+                }
+                @media (max-width:550px) 
+                {
+                  .LI{
+                    font-size: 14px;
+                  }  
+                  @media (max-width:550px) 
+                  {
+                    .LI{
+                      font-size: 11px;
+                    }  
+                  }
+                }
+            }
+        }        
+    }
+}
+/* tronco */
+#tronco{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+.item1{
+    width: 100%;
+    height: 149px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    border: solid;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.item1 p{
+    margin-top: 17px;
+}
+#quemsomosone img{
+    margin-top: 50px;
+    border-radius: 10px;
+}
+#quemsomostwo img{
+    border-radius: 10px;
+
+    
+}
+#escritasinferior{
+    border: solid;
+    border-radius: 10px;
+
+    
+}
+#lastimage img{
+    border-radius: 10px;       
+}
+@media(max-width:1269px){
+ .item1{
+    margin-left: 2%;
+    height: 85%;
+    width: 80%;
+    grid-area: a;
+ }
+ #escritasinferior{
+  margin-left: 29%;
+  grid-area: g;
+ }
+
+ #escritasinferior p{
+  text-align: center;
+  font-size: 10;
+ }
+ img{
+  height: 80%;
+  width: 80%;
+ }
+ #quemsomosone{
+  margin-left: 190px;
+  grid-area: s;
+ }
+ #quemsomostwo{
+    grid-area: d;
+ }
+ #lastimage{
+    grid-area: f;
+ }
+ .item1 p{
+  font-size: 10px;
+ }
+ #tronco{
+    grid-template-areas:"a"
+    "s" 
+    "d"
+    "f"
+    "g";
+ }
+ @media (max-width:850px) {
+    .item1{
+        height: 90%;
+    }
+ }
+}
+/* rodape*/
+#pe{
+  width: 100%;
+  height: 270px;
+  background-color: #F9B6B6;;
+  margin-top: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}  
+#pe div{
+  height: 265px;
+  text-align: center;
+}
+#Logofim{
+  height: 103px;
+  width: 325px;
+}
+#local{
+  transition: 0.8s;
+  color: black;
+}
+#local:hover{
+  color: red;
+  font-size: 20px;
+}
+.juntarp{
+  margin-top: 15%;
+}
+#pe div p a{
+  color: black;
+  transition: 0.8s;
+}
+#pe div p a:hover{
+  color: red;
+  font-size: 20px;
+}
+@media (max-width:900px)
+{
+  #pe{
+      width: 100%;
+      height: 270px;
+      background-color: #F9B6B6;;
+      margin-top: 100px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }  
+    #pe div{
+      height: 265px;
+      text-align: center;
+    }
+    #Logofim{
+      height: 103px;
+      width: 325px;
+    }
+    #local{
+      transition: 0.8s;
+      color: black;
+    }
+    #local:hover{
+      color: red;
+      font-size: 20px;
+    }
+    .juntarp{
+      margin-top: 15%;
+    }
+  #pe div p a{
+      color: black;
+      transition: 0.8s;
+  }
+  #pe div p a:hover{
+      color: red;
+      font-size: 20px;
+  }
+  #fa{
+      position: absolute;
+      margin-left: 35%;
+    }
+  #na{
+      position: absolute;
+    }
+  #ka{
+      position: absolute;
+      margin-left: 75%;
+  }
+  @media(max-width:856px) 
+   {
+      .juntarp{
+          font-size: 20px;
+      }
+  }
+  @media (max-width:858px)
+   {
+      #pe{
+          height: 590px;
+          width: 100%;
+      }
+      #fa{
+          position: absolute;
+          margin-left: 25%;
+        }
+      #na{
+          position: absolute;
+          margin-top: 310px;
+          margin-left: 25%;
+        }
+      #ka{
+          position: absolute;
+          margin-left: 28%;
+          margin-top: 140px;
+      }
+  }  
+}

@@ -1,0 +1,617 @@
+*{
+    padding: 0px;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+::selection{
+  color: crimson;
+}
+/* cabeça */
+.grupocabeca{
+    display: flex;
+    background-color: #F9B6B6;
+    height: 150px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.Cursor{
+    margin-top: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+#Pesquisa{
+    height: 34px;
+    width: 283px;
+    margin-top: 70px; 
+    border-radius: 10px 10px 10px 10px;
+    border-color: black;
+}
+.Cursor:hover{
+color: red;
+transform: scale(1.2);
+}
+#logo{
+    margin-left: 7%;
+    margin-top: 26px;
+}
+
+.LI {
+    display: inline-block;
+    margin-top: 65px;
+    font-size: 22px;
+    transition: 0.8s;
+}
+.UL{
+    margin-left: 7%;
+}
+
+.LI {
+        margin-right: 37px;
+}
+ li a{
+    color: black;  
+    transition: 0.8s;  
+}
+a:hover{
+    color: red;
+    font-size: 25px;
+}
+.grupocabeca div span{
+    margin-right: 0px;
+}
+@media(max-width:1100px)
+{
+    .grupocabeca{
+        display: flex;
+        background-color: #F9B6B6;
+        height: 150px;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .Cursor{
+        margin-top: 10px;
+        transition: 1s;
+        cursor: pointer;
+    }
+    #Pesquisa{
+        height: 34px;
+        width: 283px;
+        margin-top: 70px; 
+        border-radius: 10px 10px 10px 10px;
+        border-color: black;
+    }
+    .Cursor:hover{
+    color: red;
+    transform: scale(1.2);
+    }
+    #logo{
+        margin-left: 7%;
+        margin-top: 26px;
+    }
+    div #logo{
+        position: relative;
+        right: 200px;
+    }
+    
+    .LI {
+        display: inline-block;
+        margin-top: 65px;
+        font-size: 17px;
+        transition: 0.8s;
+    }
+    .UL{
+        position: relative;
+        right: 0px;
+    }
+    
+    .LI {
+            margin-right: 37px;
+    }
+     li a{
+        color: black;  
+        transition: 0.8s;  
+    }
+    a:hover{
+        color: red;
+        font-size: 20px;
+    }
+    .grupocabeca div span{
+        margin-right: 0px;
+    }
+    #delete{
+        z-index: -1;
+    }
+    @media (max-width:1033px) 
+    {
+        #logo{
+            position: absolute;
+            margin-right: 10px;
+        }
+        .UL{
+            position: absolute;
+        }
+        .LI{
+           font-size: 15px ;
+        }
+        .LI:hover{
+            font-size: 18px; 
+        }
+        @media (max-width:860px)
+        {
+            .grupocabeca{
+                height: 200px;
+                width: 100%;
+            }
+            #ma{
+                position: absolute;
+                margin-left: 40%;
+            }
+            .UL{
+                margin-right: 25%;
+                margin-top: 90px;
+            }
+            @media (max-width:827px)
+             {
+                .grupocabeca{
+                    height: 210px;
+                    width: 100%;
+                }
+                #delete{
+                    margin-bottom: 200px;
+                }
+                #ma{
+                    position: absolute;
+                    margin-bottom: 50%;
+                    margin-left: 200px;
+                }
+                .UL{
+                    position: absolute;
+                    margin-right: 25%;
+                    margin-top: 100px;
+                }
+                @media (max-width:550px) 
+                {
+                  .LI{
+                    font-size: 14px;
+                  }  
+                  @media (max-width:550px) 
+                  {
+                    .LI{
+                      font-size: 11px;
+                    }  
+                  }
+                }
+            }
+        }        
+    }
+}
+/* tronco */
+#mae{
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas: 
+            "a s d"
+            "z x c";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 2fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 9px;
+}
+#mae div{
+    border: solid;
+}
+#videogame{
+        background-image: url("videogame.jpg");
+        background-size: 100% 100%;
+        height: 239px;
+        width: 315px;
+        grid-area: a;
+        transition: 0.8s;
+        border-radius: 30px;
+    }
+#videogame:hover{
+    transform: scale(1.2);
+    font-size: 30px;
+}
+#jogos{
+    height: 239px;
+    width: 315px;
+    background-image: url("jogos.jpg");
+    background-size: 100% 100%;
+    grid-area: z;
+    transition: 0.8s;
+    border-radius: 30px;
+}
+#jogos:hover{
+    transform: scale(1.2);
+    font-size: 30px;
+}
+#itensgeek{
+    height: 239px;
+    width: 315px;
+    background-image: url("itensgeek.jpg");
+    background-size: 100% 100%;
+    grid-area: s;
+    transition: 0.8s;
+    border-radius: 30px;
+}
+#itensgeek:hover{
+    transform: scale(1.2);
+    font-size: 30px;
+}
+#perifericos{
+    height: 239px;
+    width: 315px;
+    background-image: url("periferico.jpg");
+    background-size: 100% 100%;
+    grid-area: x;
+    transition: 0.8s;
+    border-radius: 30px;
+}
+#perifericos:hover{
+    transform: scale(1.2);
+    font-size: 30px;
+}
+#colecionador{
+    height: 239px;
+    width: 315px;
+    background-image: url("itensdecolecionador.jpg");
+    background-size: 100% 100%;
+    grid-area: d;
+    transition: 0.8s;  
+    border-radius: 30px;
+}
+#colecionador:hover{
+    transform: scale(1.2);
+    font-size: 30px;
+}
+#hardware{
+    height: 239px;
+    width: 315px;
+    background-image: url("Hardware.jpg");
+    background-size: 100% 100%;
+    grid-area: c;
+    transition: 0.8s;
+    border-radius: 30px;
+}
+#hardware:hover{
+    transform: scale(1.2);
+    font-size: 30px;
+}
+div p {
+    text-align: center;
+    margin-top: 35%;
+}
+.mae div{
+    border: solid;
+}
+a div{
+    color: black;
+}
+@media(max-width:1292px)
+{
+    #mae{
+        margin-top: 120px;
+        display: grid;
+        grid-template-areas: 
+                "a s"
+                "d z"
+                "x c";
+        margin-left: 20%;
+        margin-right: 10%;
+        padding: 9px;
+    }
+    #mae div{
+        border: solid;
+    }
+    #videogame{
+            background-image: url("videogame.jpg");
+            background-size: 100% 100%;
+            height: 189px;
+            width: 265px;
+            grid-area: a;
+            transition: 0.8s;
+            border-radius: 30px;
+        }
+    #videogame:hover{
+        transform: scale(1.1);
+        font-size: 20px;
+    }
+    #jogos{
+        height: 189px;
+        width: 265px;
+        background-image: url("jogos.jpg");
+        background-size: 100% 100%;
+        grid-area: z;
+        transition: 0.8s;
+        border-radius: 30px;
+    }
+    #jogos:hover{
+        transform: scale(1.1);
+        font-size: 20px;
+    }
+    #itensgeek{
+        height: 189px;
+        width: 265px;
+        background-image: url("itensgeek.jpg");
+        background-size: 100% 100%;
+        grid-area: s;
+        transition: 0.8s;
+        border-radius: 30px;
+    }
+    #itensgeek:hover{
+        transform: scale(1.1);
+        font-size: 20px;
+    }
+    #perifericos{
+        height: 189px;
+        width: 265px;
+        background-image: url("periferico.jpg");
+        background-size: 100% 100%;
+        grid-area: x;
+        transition: 0.8s;
+        border-radius: 30px;
+    }
+    #perifericos:hover{
+        transform: scale(1.1);
+        font-size: 20px;
+    }
+    #colecionador{
+        height: 189px;
+        width: 265px;
+        background-image: url("itensdecolecionador.jpg");
+        background-size: 100% 100%;
+        grid-area: d;
+        transition: 0.8s;  
+        border-radius: 30px;
+        margin-top: 90px;
+    }
+    #colecionador:hover{
+        transform: scale(1.1);
+        font-size: 20px;
+    }
+    #hardware{
+        height: 189px;
+        width: 265px;
+        background-image: url("Hardware.jpg");
+        background-size: 100% 100%;
+        grid-area: c;
+        transition: 0.8s;
+        border-radius: 30px;
+        margin-top: 90px;
+    }
+    #hardware:hover{
+        transform: scale(1.1);
+        font-size: 20px;
+    }
+    div p {
+        text-align: center;
+        margin-top: 35%;
+    }
+    @media (max-width:870px) {
+        #mae{
+            margin-top: 120px;
+            display: grid;
+            grid-template-areas: 
+                    "a"
+                    "s"
+                    "d"
+                    "z"
+                    "x"
+                    "c";
+            margin-left: 31%;
+            margin-right: 10%;
+            padding: 9px;
+            grid-auto-flow: column;
+        }
+        #mae div{
+            border: solid;
+        }
+        #videogame{
+                background-image: url("videogame.jpg");
+                background-size: 100% 100%;
+                height: 189px;
+                width: 265px;
+                grid-area: a;
+                transition: 0.8s;
+                border-radius: 30px;
+            }
+        #videogame:hover{
+            transform: scale(1.1);
+            font-size: 20px;
+        }
+        #jogos{
+            height: 189px;
+            width: 265px;
+            background-image: url("jogos.jpg");
+            background-size: 100% 100%;
+            grid-area: z;
+            transition: 0.8s;
+            border-radius: 30px;
+        }
+        #jogos:hover{
+            transform: scale(1.1);
+            font-size: 20px;
+        }
+        #itensgeek{
+            height: 189px;
+            width: 265px;
+            background-image: url("itensgeek.jpg");
+            background-size: 100% 100%;
+            grid-area: s;
+            transition: 0.8s;
+            border-radius: 30px;
+            margin-top: 99px;
+        }
+        #itensgeek:hover{
+            transform: scale(1.1);
+            font-size: 20px;
+        }
+        #perifericos{
+            height: 189px;
+            width: 265px;
+            background-image: url("periferico.jpg");
+            background-size: 100% 100%;
+            grid-area: x;
+            transition: 0.8s;
+            border-radius: 30px;
+            margin-top: 99px;
+        }
+        #perifericos:hover{
+            transform: scale(1.1);
+            font-size: 20px;
+        }
+        #colecionador{
+            height: 189px;
+            width: 265px;
+            background-image: url("itensdecolecionador.jpg");
+            background-size: 100% 100%;
+            grid-area: d;
+            transition: 0.8s;  
+            border-radius: 30px;
+            margin-top: 99px;
+        }
+        #colecionador:hover{
+            transform: scale(1.1);
+            font-size: 20px;
+        }
+        #hardware{
+            height: 189px;
+            width: 265px;
+            background-image: url("Hardware.jpg");
+            background-size: 100% 100%;
+            grid-area: c;
+            transition: 0.8s;
+            border-radius: 30px;
+            margin-top: 99px;
+        }
+        #hardware:hover{
+            transform: scale(1.1);
+            font-size: 20px;
+        }
+        div p {
+            text-align: center;
+            margin-top: 35%;
+        }
+    }
+}
+
+/* rodape*/
+#pe{
+    width: 100%;
+    height: 270px;
+    background-color: #F9B6B6;;
+    margin-top: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }  
+  #pe div{
+    height: 265px;
+    text-align: center;
+  }
+  #Logofim{
+    height: 103px;
+    width: 325px;
+  }
+  #local{
+    transition: 0.8s;
+    color: black;
+  }
+  #local:hover{
+    color: red;
+    font-size: 20px;
+  }
+  .juntarp{
+    margin-top: 15%;
+  }
+#pe div p a{
+    color: black;
+    transition: 0.8s;
+}
+#pe div p a:hover{
+    color: red;
+    font-size: 20px;
+}
+@media (max-width:900px)
+{
+    #pe{
+        width: 100%;
+        height: 270px;
+        background-color: #F9B6B6;;
+        margin-top: 100px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+      }  
+      #pe div{
+        height: 265px;
+        text-align: center;
+      }
+      #Logofim{
+        height: 103px;
+        width: 325px;
+      }
+      #local{
+        transition: 0.8s;
+        color: black;
+      }
+      #local:hover{
+        color: red;
+        font-size: 20px;
+      }
+      .juntarp{
+        margin-top: 15%;
+      }
+    #pe div p a{
+        color: black;
+        transition: 0.8s;
+    }
+    #pe div p a:hover{
+        color: red;
+        font-size: 20px;
+    }
+    #fa{
+        position: absolute;
+        margin-left: 35%;
+      }
+    #na{
+        position: absolute;
+      }
+    #ka{
+        position: absolute;
+        margin-left: 75%;
+    }
+    @media(max-width:856px) 
+     {
+        .juntarp{
+            font-size: 20px;
+        }
+    }
+    @media (max-width:858px)
+     {
+        #pe{
+            height: 590px;
+            width: 100%;
+        }
+        #fa{
+            position: absolute;
+            margin-left: 25%;
+          }
+        #na{
+            position: absolute;
+            margin-top: 310px;
+            margin-left: 25%;
+          }
+        #ka{
+            position: absolute;
+            margin-left: 28%;
+            margin-top: 140px;
+        }
+    }  
+}
